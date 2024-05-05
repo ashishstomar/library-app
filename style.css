@@ -6,7 +6,10 @@
     --bookInfo-border-left: rgb(171, 134, 255);
 }
 
-@font-family {}
+@font-face {
+    font-family: 'montserrat';
+    src: url(assets/fonts/Montserrat-VariableFont_wght.ttf);
+}
 
 body {
     margin: 0;
@@ -15,6 +18,7 @@ body {
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 0.1fr 3fr 0.1fr ;
     height: 100%;
+    font-family: 'montserrat', Times, serif;
 }
 
 header {
@@ -51,7 +55,8 @@ footer {
     justify-content: center;
     align-items: center;
     border-left: 15px solid var(--bookInfo-border-left);
-    border-radius: 8px;;
+    border-radius: 8px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.13);
 
 }
 
