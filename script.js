@@ -5,23 +5,9 @@ const main = document.querySelector("main");
 const removeBook = document.querySelector("button");
 const newBookBtn = document.querySelector(".newBookBtn");
 const fieldset = document.querySelector("fieldset");
+const closeFormBtn = document.querySelector("#closeFormBtn");
 
-const myLibrary = [
-    // {
-    //     title: "Let Us C",
-    //     author: "Yashwant k",
-    //     genre: "Comp Science",
-    //     pages: 430,
-    //     read: "Yes"
-    // },
-    // {
-    //     title: "Data Structure",
-    //     author: "Narasimha",
-    //     genre: "Engineering",
-    //     pages: 512,
-    //     read: "No"
-    // },
-];
+const myLibrary = [];
 
 function Book(title, author, genre, pages, read) {
     this.title = title;
@@ -80,11 +66,15 @@ form.addEventListener("submit", (e) => {
     
     addBookToLibrary();
     e.preventDefault();
-    newBookBtn.style.display = "block"
-    fieldset.style.display = "none";
+    
 })
 
 newBookBtn.addEventListener("click", () => {
-    fieldset.style.display = "block";
+    fieldset.style.display = "flex";
     newBookBtn.style.display = "none";
+})
+
+closeFormBtn.addEventListener("click", () => {
+    fieldset.style.display = "none";
+    newBookBtn.style.display = "block";
 })

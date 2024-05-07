@@ -10,11 +10,13 @@
 <body>
     <header>
         <nav>
-            <h1>Library</h1>
+            <h1>Library Record 📙🔖</h1>
         </nav>
     </header>
     <aside>
+        <button class="newBookBtn">+ New Book</button>
         <fieldset>
+            <button id="closeFormBtn">x</button>  
             <legend>New Book</legend>
             <form>
                 <div>
@@ -35,24 +37,28 @@
                 </div>
                 <div>
                     <span>Read?</span>
-                    <label for="isReadYes">Yes</label>
-                    <input type="radio" id="isReadYes" value="yes" name="isRead">
+                    <label for="isRead">Yes</label>
+                    <input type="radio" id="isRead" value="yes" name="isRead">
                     <label for="isReadNo">No</label>
-                    <input type="radio" id="isReadNo" value="no" name="isRead">
+                    <input type="radio" id="isRead" value="no" name="isRead">
                 </div>
-            <input type="submit" value="Submit">
-            </fieldset>    
+            <input type="submit" id="submit" value="Submit">
+            </fieldset>  
         </form>
     </aside>
     <main>
-        <h1 id="headingMain">Books Collection</h1>
+        <h2 id="headingMain">Books Collection 📚</h2>
         <section class="bookInfo">
             <h4 class="title">The Elegant Universe</h4>
             <p class="author">By: Brian Greene</p>
             <p class="pages">400 Pages</p>
-            <p class =genre>Science Fiction</p>
-            <p class="'isRead">Read</p>
-            <p>Delete</p>
+            <p class="genre">Science Fiction</p>
+            <p class="read">Read</p>
+            <label for="readtoggle"> 
+                <input type="checkbox" id="readtoggle" value="no" name="readtoggle">
+            </label>
+            <button class = removeBook>X</button>
+
         </section>
     </main>
     <footer>
