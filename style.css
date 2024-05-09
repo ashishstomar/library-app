@@ -54,21 +54,60 @@ footer {
 
 .bookInfo {
     background-color: var(--bookInfo-color);
-    height: 150px;
-    display: grid;
-    grid-template-rows: 50px 20px 20px 20px 20px 40px;
+    width: 180px;
+    height: 220px;
     margin: 0px;
     padding: 15px;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
     border-left: 10px solid var(--bookInfo-border-left);
     border-radius: 8px;
-    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.13);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     color: rgb(0, 0, 0);
     font-weight: 500;
-
+    word-wrap: break-word;
+    position: relative;
 }
 
+.bookInfo > * {
+    margin: 0px;
+}
+.bookInfo > div {
+    text-align: right;
+}
+
+.bookInfo > div > img {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.bookInfo > div > img:hover {
+    filter: invert(100%);
+}
+
+.bookInfo > div > ul {
+    list-style-type: none;
+    padding: 3px;
+    margin: 0px;
+    background-color: #fae5df;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: none;
+    position: absolute;
+    right: 0px;
+    
+}
+.bookInfo > div > ul > li > button {
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border-radius: 10px;
+    background-color: #f5cac2;
+    font-weight: 600;
+    padding: 8px;
+    margin: 3px 0px;
+}
 #headingMain {
     grid-column: 1 / -1;
     margin: 0px;
@@ -81,6 +120,7 @@ aside {
     justify-content: center;
     align-items: center;
 }
+
 .newBookBtn {
     height: 50px;
     width: 160px;
@@ -103,9 +143,9 @@ fieldset {
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
 }
 
 input {
@@ -125,11 +165,19 @@ header {
     color: #ffffff;
 }
 
-#closeFormBtn {
+#closeFormBtn, #removeBookBtn  {
     background-color: #141850;
     color: #fbfbfb;
     font-size: 18px;
     border-radius: 8px;
     border: none;
     padding: 5px 10px;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+#removeBookBtn {
+    height: 20px;
+    width: 30px;
+    padding: 0px;
 }

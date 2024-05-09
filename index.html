@@ -49,20 +49,25 @@
     <main>
         <h2 id="headingMain">Books Collection 📚</h2>
         <section class="bookInfo">
+            <div>
+                <img src="assets/icons/dots-vertical-alt-svgrepo-com.svg" id="threeDots">
+                <ul class="threeDotsOptions">
+                    <li><button>Read Status</button></li>
+                    <li><button class="deleteBtn">Delete</button></li>
+                </ul>
+            </div>
             <h4 class="title">The Elegant Universe</h4>
             <p class="author">By: Brian Greene</p>
             <p class="pages">400 Pages</p>
-            <p class="genre">Science Fiction</p>
+            <p class="genre">Science Fiction</p> <br>
             <p class="read">Read</p>
             <label for="readtoggle"> 
                 <input type="checkbox" id="readtoggle" value="no" name="readtoggle">
             </label>
-            <button class = removeBook>X</button>
-
         </section>
     </main>
     <footer>
-        <h3>@ashishstomar</h3>
+        <h3>@ashishstomar</h3> <button id="removeBookBtn">x</button> <br>
     </footer>
 </body>
 </html>
