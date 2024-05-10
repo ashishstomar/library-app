@@ -37,10 +37,10 @@
                 </div>
                 <div>
                     <span>Read?</span>
-                    <label for="isRead">Yes</label>
-                    <input type="radio" id="isRead" value="yes" name="isRead">
+                    <label for="isReadYes">Yes</label>
+                    <input type="radio" id="isReadYes" value="Read" name="isRead">
                     <label for="isReadNo">No</label>
-                    <input type="radio" id="isRead" value="no" name="isRead">
+                    <input type="radio" id="isReadNo" value="Unread" name="isRead">
                 </div>
             <input type="submit" id="submit" value="Submit">
             </fieldset>  
@@ -50,9 +50,9 @@
         <h2 id="headingMain">Books Collection 📚</h2>
         <section class="bookInfo">
             <div>
-                <img src="assets/icons/dots-vertical-alt-svgrepo-com.svg" id="threeDots">
+                <i class="threeDots"></i>
                 <ul class="threeDotsOptions">
-                    <li><button>Read Status</button></li>
+                    <li><button class="readBtn">Read Status</button></li>
                     <li><button class="deleteBtn">Delete</button></li>
                 </ul>
             </div>
@@ -61,9 +61,6 @@
             <p class="pages">400 Pages</p>
             <p class="genre">Science Fiction</p> <br>
             <p class="read">Read</p>
-            <label for="readtoggle"> 
-                <input type="checkbox" id="readtoggle" value="no" name="readtoggle">
-            </label>
         </section>
     </main>
     <footer>
