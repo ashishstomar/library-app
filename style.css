@@ -75,13 +75,16 @@ footer {
     text-align: right;
 }
 
-.bookInfo > div > img {
+.threeDots {
+    display: inline-block;
+    background-image: url('assets/icons/dots-vertical-alt-svgrepo-com.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
     height: 30px;
     width: 30px;
-    cursor: pointer;
 }
 
-.bookInfo > div > img:hover {
+.threeDots:hover {
     filter: invert(100%);
 }
 
