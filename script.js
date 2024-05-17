@@ -105,6 +105,7 @@ function displayBooks() {
 form.addEventListener("submit", (e) => {
     e.preventDefault();
     addBookToLibrary();
+    document.getElementById('form').reset();
     
 })
 
