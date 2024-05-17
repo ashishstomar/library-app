@@ -18,29 +18,29 @@
         <fieldset>
             <button id="closeFormBtn">x</button>  
             <legend>New Book</legend>
-            <form>
+            <form id='form'>
                 <div>
                     <label for="title">Title</label>
-                    <input type="text" id="title" name="title">
+                    <input type="text" id="title" required name="title">
                 </div>
                 <div>
                     <label for="author">Author</label>
-                    <input type="text" id="author" name="author">
+                    <input type="text" id="author" required  name="author">
                 </div>
                 <div>
                     <label for="title">Genre</label>
-                    <input type="text" id="genre" name="genre">
+                    <input type="text" id="genre" required name="genre">
                 </div>
                 <div>
                     <label for="Pages">Pages</label>
-                    <input type="number" id="author" name="pages">
+                    <input type="number" id="author" required name="pages">
                 </div>
                 <div>
                     <span>Read?</span>
                     <label for="isReadYes">Yes</label>
-                    <input type="radio" id="isReadYes" value="Read" name="isRead">
+                    <input type="radio" id="isReadYes" value="Read" required name="isRead">
                     <label for="isReadNo">No</label>
-                    <input type="radio" id="isReadNo" value="Unread" name="isRead">
+                    <input type="radio" id="isReadNo" value="Unread" required name="isRead">
                 </div>
             <input type="submit" id="submit" value="Submit">
             </fieldset>  
