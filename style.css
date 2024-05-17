@@ -58,8 +58,6 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 20px;
-    justify-content: center;
-    align-items: center;
     padding: 10px;
 }
 
@@ -191,4 +189,20 @@ header {
     height: 20px;
     width: 30px;
     padding: 0px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+a {
+    color: #e8e8e8;
+    text-decoration: none;
+}
+
+#githubIcon {
+    height: 30px;
+    filter: invert(100%);
 }
